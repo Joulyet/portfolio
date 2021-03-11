@@ -1,0 +1,11 @@
+@import "./header", "./home", "./about", "./work";
+
+@import "./components/colors";
+
+@import "./fonts/fonts";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

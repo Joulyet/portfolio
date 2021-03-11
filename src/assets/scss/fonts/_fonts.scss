@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import "../../../../node_modules/icomoon-portfolio/style.scss";
+@import "../../../../node_modules/icomoon-portfolio/variables.scss";
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+nav ul {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+b {
+  color: $pastelGreen;
+}
+
+h2 {
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato";
+  font-size: 91px;
+
+  span.alt-i {
+    -webkit-text-fill-color: $pastelGreen !important;
+    -webkit-text-stroke: transparent;
+  }
+}

@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+header {
+  margin-bottom: 72px; }
+  header nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0 0 20px; }
+    header nav svg.logo {
+      width: 65px; }
+    header nav ul {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none; }
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 50px;
+  min-height: 60vh;
+  margin-bottom: 11.125rem; }
+  #home div#home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #71e07c, #00b4cc);
+    padding: 20px 40px; }
+    #home div#home-text .line-title-1, #home div#home-text .line-title-2, #home div#home-text .line-title-3 {
+      white-space: nowrap; }
+    #home div#home-text .line-title-1 {
+      font-size: 8rem; }
+    #home div#home-text .line-title-2 {
+      font-size: 3.313rem; }
+    #home div#home-text .line-title-3 {
+      line-height: 2em;
+      font-size: 2rem; }
+
+#about {
+  padding: 0 15vw;
+  margin-bottom: 11.125rem; }
+  #about h2#title-about:not(span) {
+    font-size: 91px; }
+    #about h2#title-about:not(span):not(span) {
+      -webkit-text-stroke: 2px black;
+      -webkit-text-fill-color: transparent;
+      font-family: "Lato"; }
+    #about h2#title-about:not(span) span {
+      margin-right: 30px; }
+  #about .box-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px; }
+    #about .box-about .info-about .info-name,
+    #about .box-about .info-about .info-mail {
+      font-size: 25px;
+      line-height: 1em; }
+      #about .box-about .info-about .info-name p,
+      #about .box-about .info-about .info-mail p {
+        font-weight: bold; }
+      #about .box-about .info-about .info-name b,
+      #about .box-about .info-about .info-mail b {
+        font-weight: 500; }
+    #about .box-about .info-about .info-mail {
+      margin-bottom: 40px; }
+    #about .box-about .info-about .box-symbols {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between; }
+      #about .box-about .info-about .box-symbols .container-symbols {
+        display: flex;
+        justify-content: space-between; }
+        #about .box-about .info-about .box-symbols .container-symbols:first-child {
+          margin-bottom: 30px; }
+        #about .box-about .info-about .box-symbols .container-symbols div.round,
+        #about .box-about .info-about .box-symbols .container-symbols div.rectangle,
+        #about .box-about .info-about .box-symbols .container-symbols div.square,
+        #about .box-about .info-about .box-symbols .container-symbols svg {
+          width: 10vw;
+          height: 10vw; }
+          #about .box-about .info-about .box-symbols .container-symbols div.round:not(svg),
+          #about .box-about .info-about .box-symbols .container-symbols div.rectangle:not(svg),
+          #about .box-about .info-about .box-symbols .container-symbols div.square:not(svg),
+          #about .box-about .info-about .box-symbols .container-symbols svg:not(svg) {
+            border: 0.35rem solid #71e07c; }
+        #about .box-about .info-about .box-symbols .container-symbols div.round,
+        #about .box-about .info-about .box-symbols .container-symbols div.square {
+          margin-right: 10px; }
+        #about .box-about .info-about .box-symbols .container-symbols div.round {
+          border-radius: 50%; }
+    #about .box-about .text-description {
+      width: 50%; }
+      #about .box-about .text-description span {
+        font-weight: lighter;
+        display: inherit;
+        font-size: 1.5rem;
+        margin-bottom: 20px; }
+      #about .box-about .text-description div {
+        display: flex;
+        justify-content: flex-end; }
+        #about .box-about .text-description div .button-cv {
+          text-align: right;
+          font-size: 30px;
+          padding: 10px 20px;
+          background-color: #71e07c;
+          width: 50px;
+          color: white;
+          border-radius: 30px; }
+  #about .box-interests h3.title-interests {
+    font-size: 3rem; }
+  #about .box-interests .icons-interests {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    #about .box-interests .icons-interests svg {
+      width: 7vw; }
+
+#work {
+  padding: 0 15vw;
+  margin-bottom: 11.125rem; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?6y98r1");
+  src: url("fonts/icomoon.eot?6y98r1#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?6y98r1") format("truetype"), url("fonts/icomoon.woff?6y98r1") format("woff"), url("fonts/icomoon.svg?6y98r1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+.alt-i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.alt-cat:before {
+  content: ""; }
+
+.alt-japan:before {
+  content: ""; }
+
+.alt-web-development:before {
+  content: ""; }
+
+.alt-losange:before {
+  content: "";
+  color: #70df7c; }
+
+.alt-download:before {
+  content: ""; }
+
+.alt-logo:before {
+  content: ""; }
+
+.alt-computer:before {
+  content: "";
+  color: #70df7c; }
+
+.alt-coffee:before {
+  content: ""; }
+
+.alt-settings:before {
+  content: "";
+  color: #70df7c; }
+
+.alt-game-controller:before {
+  content: ""; }
+
+.alt-mail:before {
+  content: ""; }
+
+.alt-discord .path1:before {
+  content: "";
+  color: black; }
+
+.alt-discord .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #7289da; }
+
+.alt-discord .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #7289da; }
+
+.alt-github .path1:before {
+  content: "";
+  color: black; }
+
+.alt-github .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path4:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path5:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path6:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path7:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-github .path8:before {
+  content: "";
+  margin-left: -1em;
+  color: #161514; }
+
+.alt-linkedin .path1:before {
+  content: "";
+  color: #0077b5; }
+
+.alt-linkedin .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white; }
+
+.alt-twitter .path1:before {
+  content: "";
+  color: #55acee; }
+
+.alt-twitter .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white; }
+
+.alt-cross:before {
+  content: "";
+  color: #70df7c; }
+
+.alt-user:before {
+  content: "";
+  color: #70df7c; }
+
+body {
+  font-family: "Cabin", sans-serif; }
+
+nav ul {
+  font-weight: bold;
+  font-size: 20px; }
+
+b {
+  color: #71e07c; }
+
+h2 {
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato";
+  font-size: 91px; }
+  h2 span.alt-i {
+    -webkit-text-fill-color: #71e07c !important;
+    -webkit-text-stroke: transparent; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
