@@ -82,24 +82,20 @@ header {
         #about .box-about .info-about .box-symbols .container-symbols:first-child {
           margin-bottom: 30px; }
         #about .box-about .info-about .box-symbols .container-symbols div.round,
-        #about .box-about .info-about .box-symbols .container-symbols div.rectangle,
-        #about .box-about .info-about .box-symbols .container-symbols div.square,
-        #about .box-about .info-about .box-symbols .container-symbols svg {
+        #about .box-about .info-about .box-symbols .container-symbols div.square {
           width: 10vw;
-          height: 10vw; }
-          #about .box-about .info-about .box-symbols .container-symbols div.round:not(svg),
-          #about .box-about .info-about .box-symbols .container-symbols div.rectangle:not(svg),
-          #about .box-about .info-about .box-symbols .container-symbols div.square:not(svg),
-          #about .box-about .info-about .box-symbols .container-symbols svg:not(svg) {
-            border: 0.35rem solid #71e07c; }
+          height: 10vw;
+          border: 0.35rem solid #71e07c; }
+        #about .box-about .info-about .box-symbols .container-symbols .alt-i {
+          font-size: 10vw; }
         #about .box-about .info-about .box-symbols .container-symbols div.round,
         #about .box-about .info-about .box-symbols .container-symbols div.square {
-          margin-right: 10px; }
+          margin-right: 30px; }
         #about .box-about .info-about .box-symbols .container-symbols div.round {
           border-radius: 50%; }
     #about .box-about .text-description {
       width: 50%; }
-      #about .box-about .text-description span {
+      #about .box-about .text-description span:not(.alt-download) {
         font-weight: lighter;
         display: inherit;
         font-size: 1.5rem;
@@ -110,19 +106,25 @@ header {
         #about .box-about .text-description div .button-cv {
           text-align: right;
           font-size: 30px;
-          padding: 10px 20px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 10px 25px;
           background-color: #71e07c;
           width: 50px;
           color: white;
           border-radius: 30px; }
+          #about .box-about .text-description div .button-cv span {
+            margin-right: 10px; }
   #about .box-interests h3.title-interests {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-bottom: 2em; }
   #about .box-interests .icons-interests {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
-    #about .box-interests .icons-interests svg {
-      width: 7vw; }
+    #about .box-interests .icons-interests span {
+      font-size: 7em; }
 
 #work {
   padding: 0 15vw;
