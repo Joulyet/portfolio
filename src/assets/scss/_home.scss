@@ -8,6 +8,16 @@
   padding: 50px;
   min-height: 60vh;
   margin-bottom: 11.125rem;
+  animation: 2s linear changeOpacity;
+
+  @keyframes changeOpacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   div#home-text {
     display: flex;

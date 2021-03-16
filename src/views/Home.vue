@@ -11,20 +11,24 @@
     </section>
     <about></about>
     <work></work>
+    <skills></skills>
+    <contact></contact>
   </main>
 </template>
 
 <script>
-
 import About from "../components/About.vue";
 import Work from "../components/Work.vue";
+import Skills from "../components/Skills.vue";
+import Contact from "../components/Contact.vue";
 
 export default {
   name: "Home",
   components: {
-    "about": About,
-    "work": Work,
+    about: About,
+    work: Work,
+    skills: Skills,
+    contact: Contact
   },
 };
-
 </script>

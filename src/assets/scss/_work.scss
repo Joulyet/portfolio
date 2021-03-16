@@ -1,4 +1,82 @@
 #work {
   padding: 0 15vw;
   margin-bottom: 11.125rem;
+
+  h2 {
+    margin-bottom: 45px;
+
+    span {
+      margin-right: 30px;
+    }
+  }
+
+  div.work-description {
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .slider-container {
+    .slider-elements {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .slider {
+        width: 750px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .container-slides {
+          display: flex;
+
+          .img-slider {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .btn-left,
+      .btn-right {
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        background: none;
+
+        span {
+          font-size: 12rem;
+        }
+      }
+    }
+
+    .container-btn-slider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 30vw;
+
+      .btn-slider {
+        width: 25px;
+        height: 25px;
+        border: 2px solid $pastelGreen;
+        border-radius: 50%;
+      }
+    }
+
+    .selected {
+      background-color: $pastelGreen;
+    }
+
+    #text-category {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0 !important;
+    }
+  }
 }

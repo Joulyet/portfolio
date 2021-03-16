@@ -23,7 +23,14 @@ header {
   background-color: aliceblue;
   padding: 50px;
   min-height: 60vh;
-  margin-bottom: 11.125rem; }
+  margin-bottom: 11.125rem;
+  animation: 2s linear changeOpacity; }
+
+@keyframes changeOpacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   #home div#home-text {
     display: flex;
     justify-content: center;
@@ -129,11 +136,113 @@ header {
 #work {
   padding: 0 15vw;
   margin-bottom: 11.125rem; }
+  #work h2 {
+    margin-bottom: 45px; }
+    #work h2 span {
+      margin-right: 30px; }
+  #work div.work-description {
+    font-size: 1.3rem;
+    margin-bottom: 100px; }
+    #work div.work-description span {
+      font-weight: bold; }
+  #work .slider-container .slider-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #work .slider-container .slider-elements .slider {
+      width: 750px;
+      height: 100%;
+      overflow: hidden;
+      position: relative; }
+      #work .slider-container .slider-elements .slider .container-slides {
+        display: flex; }
+        #work .slider-container .slider-elements .slider .container-slides .img-slider {
+          width: 100%;
+          height: auto; }
+    #work .slider-container .slider-elements .btn-left,
+    #work .slider-container .slider-elements .btn-right {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background: none; }
+      #work .slider-container .slider-elements .btn-left span,
+      #work .slider-container .slider-elements .btn-right span {
+        font-size: 12rem; }
+  #work .slider-container .container-btn-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 30vw; }
+    #work .slider-container .container-btn-slider .btn-slider {
+      width: 25px;
+      height: 25px;
+      border: 2px solid #71e07c;
+      border-radius: 50%; }
+  #work .slider-container .selected {
+    background-color: #71e07c; }
+  #work .slider-container #text-category {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0 !important; }
+
+#skills {
+  padding: 0 15vw;
+  margin-bottom: 11.125rem; }
+  #skills h2 {
+    margin-bottom: 45px; }
+    #skills h2 span {
+      margin-right: 30px; }
+  #skills .skills-description {
+    margin-bottom: 50px; }
+    #skills .skills-description p {
+      font-size: 1.3rem;
+      padding: 0 95px;
+      line-height: 40px; }
+  #skills .container-skills {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px; }
+    #skills .container-skills .bar {
+      width: 25vw; }
+      #skills .container-skills .bar h3 {
+        text-align: center;
+        font-size: 2rem; }
+      #skills .container-skills .bar div.bar-item div.bar-progress {
+        width: 100%;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #e3e3e3;
+        display: flex;
+        align-items: center; }
+        #skills .container-skills .bar div.bar-item div.bar-progress .bar-inner {
+          height: 66%;
+          width: 25%;
+          border-radius: 10px;
+          margin-left: 5px;
+          background-color: #71e07c; }
+          #skills .container-skills .bar div.bar-item div.bar-progress .bar-inner.progress-active {
+            transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1); }
+  #skills div.soft-skills h3 {
+    text-align: center;
+    font-size: 2rem; }
+  #skills div.soft-skills div.soft-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 300px; }
+    #skills div.soft-skills div.soft-elements p, #skills div.soft-skills div.soft-elements span {
+      font-size: 1.4rem; }
+    #skills div.soft-skills div.soft-elements span {
+      color: #71e07c; }
+
+#contact {
+  padding: 0 15vw;
+  margin-bottom: 11.125rem; }
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?6y98r1");
-  src: url("fonts/icomoon.eot?6y98r1#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?6y98r1") format("truetype"), url("fonts/icomoon.woff?6y98r1") format("woff"), url("fonts/icomoon.svg?6y98r1#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?bi9ank");
+  src: url("fonts/icomoon.eot?bi9ank#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?bi9ank") format("truetype"), url("fonts/icomoon.woff?bi9ank") format("woff"), url("fonts/icomoon.svg?bi9ank#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -150,6 +259,12 @@ header {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.alt-chevron-left:before {
+  content: ""; }
+
+.alt-chevron-right:before {
+  content: ""; }
 
 .alt-cat:before {
   content: ""; }
@@ -259,11 +374,11 @@ header {
   color: white; }
 
 .alt-cross:before {
-  content: "";
+  content: "";
   color: #70df7c; }
 
 .alt-user:before {
-  content: "";
+  content: "";
   color: #70df7c; }
 
 body {
